@@ -98,13 +98,15 @@ async function fetchGroup() {
 
 }
 
+console.log("[" + moment().format("HH:mm:ss") + "] Fetching for first time.")
+
 fetchGroup();
 
-console.log("Fetched for first time.")
 
 setInterval(() => {
 
-    console.log("Fetching again.")
+    console.log("[" + moment().format("HH:mm:ss") + "] Fetching again.")
+
     fetchGroup();
 
 }, 60 * 1000);
