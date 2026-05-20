@@ -46,7 +46,7 @@ async function placeData(Data) {
         await googleSheets.spreadsheets.values.append({
             auth,
             spreadsheetId,
-            range: "A2:C40",
+            range: "A2:C120",
             valueInputOption: "USER_ENTERED",
             resource: {
                 values: [[currentDate, groupName, groupMemberCount]],
