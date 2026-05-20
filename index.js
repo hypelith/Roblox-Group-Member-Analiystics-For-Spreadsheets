@@ -81,7 +81,7 @@ async function fetchGroup() {
 
     if (getDate != currentDate) {
 
-        console.log("Updating the sheets.")
+        console.log("[" + moment().format("HH:mm:ss") + "] Updating the sheets.")
 
         axios.get(`https://groups.roblox.com/v1/groups/${config.GroupId}/`)
             .then((response) => {
